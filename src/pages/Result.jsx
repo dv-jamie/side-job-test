@@ -1,6 +1,6 @@
 import { results } from '../data/results'
 import { useClipboard } from '../hooks/useClipboard'
-import { SITE_URL, SHARE_TEXT } from '../constants'
+import { SHARE_TEXT } from '../constants'
 import Button from '../components/Button'
 import Tag from '../components/Tag'
 import styles from './Result.module.css'
@@ -10,18 +10,19 @@ export default function Result({ resultKey, onRestart }) {
   const { copied, copy } = useClipboard()
 
   const handleShare = async () => {
+    const shareUrl = window.location.href
     if (navigator.share) {
       try {
         await navigator.share({
           title: `나의 부업 유형은 "${result.name}"!`,
           text: SHARE_TEXT(result.name, result.sub),
-          url: SITE_URL
+          url: shareUrl
         })
       } catch {
         // 사용자가 공유 취소한 경우 무시
       }
     } else {
-      copy(SITE_URL)
+      copy(shareUrl)
     }
   }
 
