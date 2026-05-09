@@ -12,7 +12,7 @@ export function calcResult(answers) {
   const isDigital  = (total.digital    || 0) >= (total.offline    || 0)
 
   if (!isDigital && !isSolo)    return 'coach'      // 오프라인 + 사교형
-  if (!isDigital)               return 'seller'     // 오프라인 + 독립형 (핸드메이드·플리마켓)
+  if (!isDigital)               return 'market'     // 오프라인 + 독립형 (핸드메이드·플리마켓)
   if (!isSolo && !isStable)     return 'creator'    // 디지털 + 사교형 + 도전형
   if (!isStable)                return 'educator'   // 디지털 + 독립형 + 도전형
   if (!isSolo)                  return 'seller'     // 디지털 + 사교형 + 안정형 (스마트스토어)

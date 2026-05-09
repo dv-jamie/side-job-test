@@ -35,8 +35,8 @@ export const questions = [
     id: 5,
     text: "자는 동안에도 내가 만든 콘텐츠·제품이 팔리면 좋겠다",
     options: [
-      { label: "A", text: "맞다. 자동 수입이 꿈이다", scores: { explosive: 1 } },
-      { label: "B", text: "아니다. 일한 만큼 받는 게 맞다", scores: { stability: 1 } }
+      { label: "A", text: "맞다. 자동 수입이 꿈이다", scores: { timeFree: 1 } },
+      { label: "B", text: "아니다. 직접 일해서 더 많이 버는 게 낫다", scores: { highIncome: 1 } }
     ]
   },
   {
