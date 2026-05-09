@@ -1,0 +1,77 @@
+.page {
+  background: #F5F3FF;
+  min-height: 100vh;
+  padding: 24px 16px;
+}
+
+.inner {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.prevBtn {
+  font-size: 14px;
+  color: #7C3AED;
+  background: none;
+  border: none;
+  margin-bottom: 16px;
+  display: block;
+  padding: 0;
+}
+
+.card {
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  animation: fadeIn 0.25s ease;
+}
+
+.questionText {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+.options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.optionBtn {
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #DDD6FE;
+  background: #fff;
+  font-size: 15px;
+  color: #374151;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.optionBtn:hover {
+  border-color: #7C3AED;
+  background: #F5F3FF;
+}
+
+.optionLabel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #EDE9FE;
+  color: #6D28D9;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}

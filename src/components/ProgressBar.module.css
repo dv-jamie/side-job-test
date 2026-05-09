@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+}
+
+.label {
+  font-size: 13px;
+  color: #9CA3AF;
+  text-align: right;
+  margin-bottom: 6px;
+}
+
+.track {
+  background: #E5E7EB;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.fill {
+  background: #7C3AED;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
